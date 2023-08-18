@@ -11,4 +11,17 @@ class ChannelController extends Controller
         $channel = DB::table('channels')->get(); 
         return view('index', ['channel' =>$channel]);
     }
+    public function addChannel(Request $request){
+        DB::table('channels')->insert([
+            'channelid'=> $request->channelid,
+            'channelname'=> $request->channelname,
+            'description' =>$request->description, 
+            'Subscriberscount'=>$request->subscribers, 
+            'url' => $request->url
+        ]);
+        return redirect()-> route('index'); 
+}
+public function show(Request $request){
+    return view('create');
+}
 }

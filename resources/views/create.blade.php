@@ -48,8 +48,9 @@
 </header> 
 <main>
     <div class="panel-body">
-        <form method="post" action="}">
+        <form method="post" action="{{ route('post-channel')}}">
             {{csrf_field()}}
+            @method('POST')
             <div class="form-group">
                 <label for="fullname">Channel ID</label> 
                 <input type="text" require name="id" id="" class="form-control">
@@ -64,7 +65,7 @@
             </div> 
             <div class="form-group">
                 <label for="fullname">Subcribers Count</label> 
-                <input type="text" require name="subcribers" id="" class="form-control">
+                <input type="text" require name="subscribers" id="" class="form-control">
             </div> 
             <div class="form-group">
                 <label for="fullname">URL</label> 

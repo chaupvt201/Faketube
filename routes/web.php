@@ -17,6 +17,9 @@ use App\Http\Controllers\ChannelController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/channel-index',[ChannelController::class, 'index']);
+Route::get('/channel-index',[ChannelController::class, 'index']
+)->name('index');
 Route::post('/post-channel', [ChannelController::class, 'addChannel']
 )-> name('post-channel'); 
+Route::get('/show', [ChannelController::class, 'show']
+)-> name('show');

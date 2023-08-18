@@ -50,7 +50,7 @@
 <main> 
     <h3 class="text-primary text-center my-3">Danh sach Channel</h3> 
     <div class="mb-3 text-end">
-        <a href="" class="btn btn-primary">Add New Channel</a>
+        <a href="{{ route('show')}}" class="btn btn-primary">Add New Channel</a>
     </div>
 <table class="table table-bordered">
   <thead>
