@@ -52,10 +52,6 @@
             {{csrf_field()}}
             @method('POST')
             <div class="form-group">
-                <label for="fullname">Channel ID</label> 
-                <input type="text" require name="id" id="" class="form-control">
-            </div> 
-            <div class="form-group">
                 <label for="fullname">Channel name</label> 
                 <input type="text" require name="channelname" id="" class="form-control">
             </div> 

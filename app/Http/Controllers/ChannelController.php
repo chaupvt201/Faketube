@@ -13,7 +13,6 @@ class ChannelController extends Controller
     }
     public function addChannel(Request $request){
         DB::table('channels')->insert([
-            'channelid'=> $request->channelid,
             'channelname'=> $request->channelname,
             'description' =>$request->description, 
             'Subscriberscount'=>$request->subscribers, 
